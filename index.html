@@ -1,14 +1,18 @@
 Hello World
 
-<div id="box" height="0" width="0"></div>
+<div id="box" style='height:0px;width:0px;background-color:blue'></div>
 
-<div style='height:100px,width:100px,background-color:red'>Some div</div>
+<div style='height:100px;width:100px;background-color:red'>Some div</div>
 
+
+<a href="https://www.google.com">another page</a>
 
 <script>
   const onPageShow = event => {
       if (event.persisted) {
-	  
+	  box = document.getElementById('box');
+	  box.style.height = "100px";
+	  box.style.width = "100px";
       }
   };
 </script>
