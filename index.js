@@ -8,14 +8,14 @@ function randomValueFromArray(array) {
 
 setInterval(() => {
   const randomChoice = randomValueFromArray(images);
-  imgElem.src = `images/${randomChoice}.jpg`;
+  imgElem.src = `images/${randomChoice}.jpeg`;
 }, 2000);
 
 // Register service worker to control making site work offline
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('/pwa-examples/a2hs/sw.js')
+    .register('/sw.js')
     .then(() => { console.log('Service Worker Registered'); });
 }
 
