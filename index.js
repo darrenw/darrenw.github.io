@@ -33,6 +33,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   deferredPrompt = e;
   console.log("Setting timeout");
   setTimeout(() => { e.prompt(); console.log("timeout called");}, 5000);
+  console.log("timeout set");
   // Update UI to notify the user they can add to home screen
   addBtn.style.display = 'block';
 
