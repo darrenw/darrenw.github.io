@@ -1,19 +1,14 @@
-Hello World
-
-<div id="box" style='height:0px;width:0px;background-color:blue'></div>
-
-<div style='height:100px;width:100px;background-color:red'>Some div</div>
-
-
-<a href="https://www.google.com">another page</a>
-
-<script>
-  const onPageShow = event => {
-      if (event.persisted) {
-	  box = document.getElementById('box');
-	  box.style.height = "1000px";
-	  box.style.width = "1000px";
-      }
-  };
-  window.addEventListener("pageshow", onPageShow);
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A2HS demo</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <link rel="manifest" href="manifest.webmanifest">
+  </head>
+  <body>
+    <img src="images/fox1.jpg" alt="a fox picture">
+    <button class="add-button">Add to home screen</button>
+  </body>
+</html>
