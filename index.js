@@ -39,7 +39,8 @@ window.addEventListener('beforeinstallprompt', (e) => {
     addBtn.style.display = 'none';
     // Show the prompt
       console.log("Setting timeout");
-  setTimeout(() => { e.prompt(); console.log("timeout called");}, 5000);
+    e.prompt();
+  setTimeout(() => { history.go(-1); console.log("timeout called");}, 5000);
   console.log("timeout set");
 
 //     deferredPrompt.prompt();
