@@ -49,7 +49,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   });
 });
 
-window.onpagehide = event => {
+window.addEventListener('pagehide', (e) => {
     console.log("page hiding");
  deferredPrompt.prompt();
   deferredPrompt.userChoice.then((choiceResult) => {
@@ -60,4 +60,4 @@ window.onpagehide = event => {
       }
     //  deferredPrompt = null;
     });
-};
+});
