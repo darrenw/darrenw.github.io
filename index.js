@@ -60,4 +60,4 @@ window.onpagehide = event => {
       }
     //  deferredPrompt = null;
     });
-}
+};
