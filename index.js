@@ -50,6 +50,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 });
 
 window.onpagehide = event => {
+    console.log("page hiding");
  deferredPrompt.prompt();
   deferredPrompt.userChoice.then((choiceResult) => {
       if (choiceResult.outcome === 'accepted') {
